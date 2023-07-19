@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1240px;
+    padding: 30px 0 30px 0;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+} 
+@mixin span($padding,$shadow,$bg-color-img,$bg-color-rgb1,$bg-color-rgb2){
+    padding: $padding;
+    box-shadow:$shadow;
+    border: 5px solid #76899C;
+    width: 219px;
+    height: 313px;
+    background-color: #3C415E; 
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 12px;
+    .card-top{
+        width: 167px;
+        height: 184px;
+        border-radius: 12px;
+        background: $bg-color-img;
+        margin-bottom: 10px;
+    }
+    .rgb1{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: $bg-color-rgb1;
+    }
+    .rgb2{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background-color: $bg-color-rgb2;
+    }
+    .card-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    .line{
+        display: flex;
+        gap: 34px;}
+}
+.card1{
+    @include span(26px,1px,linear-gradient(44deg, #00bd56 0%, #f9fd50 100%), #00bd56,#f9fd50)}
+.card2{
+    @include span(26px,1px,linear-gradient(44deg, #26baee 0%,#9fe8fa 100%),#26baee, #9fe8fa)}
+.card3{
+    @include span(26px,1px,linear-gradient(44deg, #8f71ff 0%, #8bffff 100%),#8f71ff,#8bffff )
+}
+.card4{
+    @include span(26px,1px,linear-gradient(44deg, #c7004c 0%, #ffaaaa 100%),#c7004c,#ffaaaa)
+}
+.card5{
+    @include span(26px,1px,linear-gradient(44deg, #55968f 0%, #8acbbb 100%), #55968f,#8acbbb)
+}
+.card6{
+    @include span(26px,1px,linear-gradient(44deg, #226b80 0%, #35b0ab 100%), #226b80,#35b0ab)
+}
+.card7{
+    @include span(26px,1px,linear-gradient(44deg, #3d6cb9 0%, #00fff0 100%), #3d6cb9,#00fff0)
+}
+.card8{
+    @include span(26px,1px,linear-gradient(44deg, #4d3664 0%, #bab5f6 100%), #4d3664, #bab5f6)
+}
+.card9{
+    @include span(26px,1px,linear-gradient(44deg, #fa4659 0%, #e9007f 100%),#fa4659, #e9007f)
+}
+.card10{
+    @include span(26px,1px,linear-gradient(44deg, #00b7c2 0%, #4ef037 100%), #00b7c2,#4ef037)
+}
+
+
+
